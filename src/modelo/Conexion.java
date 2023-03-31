@@ -9,6 +9,12 @@ import java.sql.DriverManager;
 
 public class Conexion {
     Connection con;
+    /**
+     * Este método se encargar de crear y devolver la conexion a la Base de datos, de manera que el Controlador
+     * puede acceder a la base de datos a realizar las diferentes acciones CRUD.
+     * @param 
+     * @return Connection 
+    */
     public Connection getConnection(){
         String url="jdbc:mysql://localhost:3306/usuarios?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
         String usua="usuarios";

@@ -265,6 +265,11 @@ public class Vista extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         Vista v = new Vista();
+        /**
+         * Aqui se inyecta la dependencia de la vista en el controlador para que 
+         * escuche los eventos que en esta suceden y actue de acuerdo a ellos, esto en
+         * aras de la implemntacion del patron MVC
+         */
         Controlador c = new Controlador(v);
         v.setVisible(true);
         v.setLocationRelativeTo(v);
